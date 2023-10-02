@@ -1,0 +1,29 @@
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-shadow: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 850px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: #a70000;
+}
