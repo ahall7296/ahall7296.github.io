@@ -1,29 +1,48 @@
-*::before,
-*::after{
+@import url(https://fonts.googleapis.com/css?family=Syne+Mono:regular);
+*
+{
     margin: 0;
     padding: 0;
-    box-shadow: inherit;
-}
-
-html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-family: 'Syne Mono';
 }
-body {
-    background-color: #000000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
 }
-textarea {
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    width: 300px;
-    height: 300px;
+h2
+{
     position: relative;
-    left: 850px;
+    font-size: 10vw;
+    color: #ff0000;
+    -webkit-text-stroke: 0.3vw #ff0000;
+    text-transform: uppercase;
+}
+h2 ::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: firebrick;
+    -webkit-text-stroke: 0vw #383d52;
     overflow: hidden;
-    border: none;
-    outline: none;
-    background-color: #000000;
-    color: #a70000;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 100%;
+    }
 }
