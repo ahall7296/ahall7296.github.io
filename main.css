@@ -31,7 +31,7 @@ h2
     color: firebrick;
     -webkit-text-stroke: 0vw #383d52;
     overflow: hidden;
-    animation: animate 13s linear infinite;
+    animation: animate 19s;
 }
 h3
 {
@@ -50,7 +50,6 @@ h3
     color: firebrick;
     -webkit-text-stroke: 0vw #383d52;
     overflow: hidden;
-    animation: animate 21s linear infinite;
 }
 h4
 {
@@ -69,7 +68,7 @@ h4
     color: firebrick;
     -webkit-text-stroke: 0vw #383d52;
     overflow: hidden;
-    animation: animate 29s linear infinite;
+    animation: animate 19s;
 }
 @keyframes animate
 {
@@ -79,6 +78,6 @@ h4
     }
     70%,90%
     {
-        width: 40%;
+        width: 50%;
     }
 }
